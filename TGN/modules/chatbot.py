@@ -194,7 +194,7 @@ async def hmm(client, message):
 
 
 @pbot.on_message(
-    filters.text & filters.private & ~filters.edited & filters.reply & ~filters.bot
+    filters.text & filters.private & filters.reply & ~filters.bot
 )
 async def inuka(client, message):
     msg = message.text
