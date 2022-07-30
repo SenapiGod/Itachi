@@ -117,7 +117,7 @@ async def writer(client, message):
             return
 
 
-@pbot.on_message(filters.command("longwrite") & ~filters.edited & ~filters.bot)
+@pbot.on_message(filters.command("longwrite") & ~filters.bot)
 async def longwriter(client, message):
     if message.reply_to_message:
         try:
