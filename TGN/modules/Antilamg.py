@@ -84,7 +84,7 @@ Usage: /antiarabic `[on | off]`
 
 # Enable anti-chinesee
 @app.on_message(
-    filters.command("antichinese") & ~filters.edited & ~filters.bot & ~filters.private
+    filters.command("antichinese") & ~filters.bot & ~filters.private
 )
 @adminsOnly("can_delete_messages")
 async def on_off_antiarab(_, message: Message):
@@ -107,7 +107,7 @@ Usage: /antichinese `[on | off]`
 
 # Enable anti-japanese
 @app.on_message(
-    filters.command("antijapanese") & ~filters.edited & ~filters.bot & ~filters.private
+    filters.command("antijapanese") & ~filters.bot & ~filters.private
 )
 @adminsOnly("can_delete_messages")
 async def on_off_antiarab(_, message: Message):
@@ -130,7 +130,7 @@ Usage: /antijapanese `[on | off]`
 
 # Enable anti-russian
 @app.on_message(
-    filters.command("antirussian") & ~filters.edited & ~filters.bot & ~filters.private
+    filters.command("antirussian") & ~filters.bot & ~filters.private
 )
 @adminsOnly("can_delete_messages")
 async def on_off_antiarab(_, message: Message):
@@ -176,7 +176,7 @@ Usage: /antisinhala `[on | off]`
 
 # Enable anti-Tamil
 @app.on_message(
-    filters.command("antitamil") & ~filters.edited & ~filters.bot & ~filters.private
+    filters.command("antitamil") & ~filters.bot & ~filters.private
 )
 @adminsOnly("can_delete_messages")
 async def on_off_antiarab(_, message: Message):
@@ -199,7 +199,7 @@ Usage: /antitamil `[on | off]`
 
 #show antilang stas 
 @app.on_message(
-    filters.command("antilang") & ~filters.edited & ~filters.bot & ~filters.private
+    filters.command("antilang") & ~filters.bot & ~filters.private
 )
 @adminsOnly("can_delete_messages")
 async def on_off_antiarab(_, message: Message):
