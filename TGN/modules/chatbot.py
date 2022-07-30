@@ -88,7 +88,7 @@ async def hmm(_, message):
     filters.text
     & filters.reply
     & ~filters.bot
-    & ~filters.edited
+   
     & ~filters.via_bot
     & ~filters.forwarded,
     group=2,
