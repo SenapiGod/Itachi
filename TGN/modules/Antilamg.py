@@ -60,7 +60,8 @@ def get_arg(message):
 
 # Enable anti-arab
 @app.on_message(
-    filters.command("antiarabic") & ~filters.edited & ~filters.bot & ~filters.private
+    filters.command("antiarabic") & ~ filters.bot & ~filters.private
+
 )
 @adminsOnly("can_delete_messages")
 async def on_off_antiarab(_, message: Message):
